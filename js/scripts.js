@@ -1,18 +1,10 @@
 $(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    var personInput = $("input#person").val();
-    var creatureInput= $("input#creature").val();
-    var adjectiveInput = $("input#adjective").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+  $("#letter").submit(function(event) {
+    var nameInput = $("input#name").val();
 
-    $(".person").text(personInput);
-    $(".creature").text(creatureInput);
-    $(".adjective").text(adjectiveInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(".name").text(nameInput);
 
-    $("#story").show();
+    $("#letterOutput").show();
 
     event.preventDefault();
   });

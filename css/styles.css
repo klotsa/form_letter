@@ -1,3 +1,12 @@
-#story {
+#letterOutput {
   display: none;
+  border-style: groove;
+  border-width: medium;
+  padding: 10px;
+  font-family: helvetica;
+  margin-top: 30px;
+}
+
+.name {
+  font-style: italic;
 }
